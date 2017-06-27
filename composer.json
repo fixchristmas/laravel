@@ -37,7 +37,10 @@
     "laravel/framework": "5.1.*",
     "wikimedia/composer-merge-plugin": "dev-master",
     "heathdutton/laravel-elasticbeanstalk-cron": "dev-master",
-    "heathdutton/cloudflare": "dev-master"
+    "heathdutton/cloudflare": "dev-master",
+    "rainlab/user-plugin": "dev-master",
+    "vojtasvoboda/oc-useraccesslog-plugin": "^1.0",
+    "flynsarmy/sociallogin": "dev-master"
   },
   "require-dev": {
     "rainlab/builder-plugin": "dev-master",
@@ -79,6 +82,23 @@
         "require": {
           "composer/installers": "~1.0",
           "oomphinc/composer-installers-extender": "^1.1"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "flynsarmy/sociallogin",
+        "type": "october-plugin",
+        "description": "Log in with your social media accounts!",
+        "version": "dev-master",
+        "source": {
+          "url": "git@bitbucket.org:flynsarmy/oc-sociallogin-plugin.git",
+          "type": "git",
+          "reference": "master"
+        },
+        "require": {
+          "composer/installers": "~1.0"
         }
       }
     }

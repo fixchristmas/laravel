@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a6afff8b39dc47641a146912f08a173",
+    "content-hash": "7f5173c39f38066b12248c09718f120c",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -818,6 +818,21 @@
                 "parser"
             ],
             "time": "2015-11-01T10:19:22+00:00"
+        },
+        {
+            "name": "flynsarmy/sociallogin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:flynsarmy/oc-sociallogin-plugin.git",
+                "reference": "master"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "october-plugin",
+            "description": "Log in with your social media accounts!",
+            "time": "2017-05-01 22:24:49"
         },
         {
             "name": "heathdutton/cloudflare",
@@ -2262,6 +2277,50 @@
             "time": "2016-03-09T05:03:14+00:00"
         },
         {
+            "name": "rainlab/user-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rainlab/user-plugin.git",
+                "reference": "13cb46b4add6ed80146ed5eb304ddfbbf28090b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rainlab/user-plugin/zipball/13cb46b4add6ed80146ed5eb304ddfbbf28090b1",
+                "reference": "13cb46b4add6ed80146ed5eb304ddfbbf28090b1",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.5.9"
+            },
+            "type": "october-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexey Bobkov",
+                    "email": "aleksey.bobkov@gmail.com",
+                    "role": "Co-founder"
+                },
+                {
+                    "name": "Samuel Georges",
+                    "email": "daftspunky@gmail.com",
+                    "role": "Co-founder"
+                }
+            ],
+            "description": "User plugin for October CMS",
+            "homepage": "https://octobercms.com/plugin/rainlab-user",
+            "keywords": [
+                "october",
+                "octobercms",
+                "user"
+            ],
+            "time": "2017-06-22 22:23:20"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.8",
             "source": {
@@ -3358,6 +3417,49 @@
                 "environment"
             ],
             "time": "2015-05-30T15:59:26+00:00"
+        },
+        {
+            "name": "vojtasvoboda/oc-useraccesslog-plugin",
+            "version": "1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vojtasvoboda/oc-useraccesslog-plugin.git",
+                "reference": "a644cc42f557cc946a9399a1d1c6dcec33c7af84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vojtasvoboda/oc-useraccesslog-plugin/zipball/a644cc42f557cc946a9399a1d1c6dcec33c7af84",
+                "reference": "a644cc42f557cc946a9399a1d1c6dcec33c7af84",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.5.9"
+            },
+            "type": "october-plugin",
+            "extra": {
+                "installer-name": "useraccesslog"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vojta Svoboda",
+                    "email": "vojtasvoboda.cz@gmail.com"
+                }
+            ],
+            "description": "User access log plugin for OctoberCMS",
+            "homepage": "https://github.com/vojtasvoboda/oc-useraccesslog-plugin",
+            "keywords": [
+                "access",
+                "log",
+                "october",
+                "plugin",
+                "user"
+            ],
+            "time": "2016-11-13T19:10:17+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -4625,6 +4727,8 @@
         "wikimedia/composer-merge-plugin": 20,
         "heathdutton/laravel-elasticbeanstalk-cron": 20,
         "heathdutton/cloudflare": 20,
+        "rainlab/user-plugin": 20,
+        "flynsarmy/sociallogin": 20,
         "rainlab/builder-plugin": 20
     },
     "prefer-stable": true,
