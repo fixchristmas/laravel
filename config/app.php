@@ -81,7 +81,8 @@ return [
     |
     */
 
-    'key' => 'S5BOkoTbDrPWvWJwXPVEHrezyPucxxUo',
+    // This key is for local development only ;)
+    'key' => env('APP_KEY', 'S5BOkoTbDrPWvWJwXPVEHrezyPucxxUo'),
 
     'cipher' => 'AES-256-CBC',
 
