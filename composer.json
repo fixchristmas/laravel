@@ -39,6 +39,7 @@
     "wikimedia/composer-merge-plugin": "dev-master",
     "heathdutton/laravel-elasticbeanstalk-cron": "dev-master",
     "heathdutton/cloudflare": "dev-master",
+    "heathdutton/charity": "dev-master",
     "rainlab/user-plugin": "dev-master",
     "vojtasvoboda/oc-useraccesslog-plugin": "^1.0",
     "flynsarmy/sociallogin": "dev-master"
@@ -77,6 +78,24 @@
         "version": "dev-master",
         "source": {
           "url": "https://github.com/heathdutton/cloudflare.git",
+          "type": "git",
+          "reference": "master"
+        },
+        "require": {
+          "composer/installers": "~1.0",
+          "oomphinc/composer-installers-extender": "^1.1"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "heathdutton/charity",
+        "type": "october-cms-plugin",
+        "description": "A charity management plugin for Laravel / October",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/heathdutton/charity.git",
           "type": "git",
           "reference": "master"
         },
