@@ -1,0 +1,29 @@
+# Folders to be ignored by elastic beanstalk (these will not be deployed to Amazon)
+/node_modules
+/bower_components
+/public/storage
+/storage/*.key
+/.idea
+Homestead.json
+Homestead.yaml
+composer.phar
+.DS_Store
+/.env
+/tests
+/.elasticbeanstalk/*/
+.git
+**/.git
+
+# Exclude log files and other unnecessary local files.
+/storage/logs/*
+/storage/temp/*
+/storage/framework/cache/*
+/storage/cms/cache/*
+/storage/uploads/public/*
+!/storage/**/.gitignore
+
+# Prevent modules/plugins from adding to our deployment process.
+/*/**/.ebextensions
+
+# Ignore dashboard widgets, as it's ~45Mb not needed in production.
+/dashboard/widgets

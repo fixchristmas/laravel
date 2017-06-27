@@ -49,7 +49,7 @@ return [
     |
     */
 
-    'backendForceSecure' => null,
+    'backendForceSecure' => env('APP_BACKEND_FORCE_SECURE', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -62,7 +62,7 @@ return [
     |
     */
 
-    'backendTimezone' => 'UTC',
+    'backendTimezone' => 'EST',
 
     /*
     |--------------------------------------------------------------------------
@@ -98,7 +98,7 @@ return [
     |
     */
 
-    'disableCoreUpdates' => false,
+    'disableCoreUpdates' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -123,7 +123,7 @@ return [
     |
     */
 
-    'enableRoutesCache' => false,
+    'enableRoutesCache' => !env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -163,7 +163,7 @@ return [
     |
     */
 
-    'enableAssetCache' => false,
+    'enableAssetCache' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -262,7 +262,7 @@ return [
     |
     */
 
-    'convertLineEndings' => false,
+    'convertLineEndings' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -302,7 +302,7 @@ return [
     |
     */
 
-    'enableSafeMode' => null,
+    'enableSafeMode' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -314,7 +314,7 @@ return [
     |
     */
 
-    'enableCsrfProtection' => false,
+    'enableCsrfProtection' => true,
 
     /*
     |--------------------------------------------------------------------------

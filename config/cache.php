@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => 'file',
+    'default' => env('CACHE_DRIVER', 'file'),
 
     /*
     |--------------------------------------------------------------------------
@@ -74,6 +74,6 @@ return [
     |
     */
 
-    'prefix' => 'october',
+    'prefix' => env('APP_URL', 'october'),
 
 ];

@@ -14,7 +14,15 @@ nginx-ssl.error.log
 php-errors.log
 sftp-config.json
 selenium.php
-composer.lock
-
-# for netbeans
 nbproject
+/modules
+/storage/*.key
+/plugins
+GTAGS
+GPATH
+GRTAGS
+npm-debug.log
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/config.yml
+!.elasticbeanstalk/*.global.yml

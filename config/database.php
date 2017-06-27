@@ -54,14 +54,14 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'port'      => '',
-            'database'  => 'database',
-            'username'  => 'root',
-            'password'  => '',
+            'host'      => env('DB_HOST', 'localhost'),
+            'port'      => env('DB_PORT', ''),
+            'database'  => env('DB_DATABASE','database'),
+            'username'  => env('DB_USER', 'root'),
+            'password'  => env('DB_PASS', 'root'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
-            'prefix'    => '',
+            'prefix'    => env('DB_PREFIX', ''),
         ],
 
         'pgsql' => [
